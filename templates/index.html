@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+
+
+<head>
+  <title>Air Travel - Turismo</title>
+  
+
+</head>
+<body>
+
+
+<br><div class="container text-center col-9">
+    <h1>BIENVENIDO AL SISTEMA DE GESTION DE LA BASE DE DATOS DE AIR TRAVEL TURISMO</h1>
+  </div><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/playa.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">DESTINOS DISPONIBLES</h5>
+                <p class="card-text">Ciudades de origen y destino disponibles por la empresa y tarifas vigentes.</p>
+                <a href="registro.html" class="btn btn-primary">Buscar</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/logo.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="formpasajero.html" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/logo.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div><br><br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/logo.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/logo.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="card text-white bg-danger animated fadeInUp" style="width: 18rem;">
+              <img src="{{url_for('static', filename = 'images/logo.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ESTADO DE VUELO</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div><br><br>
+
+  <footer>
+    <h4>Todos los derechos reservados ©</h4>
+  </footer>
+
+</body>
+
+
+
+{% endblock%}
