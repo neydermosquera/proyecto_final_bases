@@ -1,0 +1,28 @@
+:root {
+
+    --primary: #2196f3
+    --light: #ffffff
+    --grey: #efefef 
+}
+
+#sidebar-container{
+    min-height: 100vh;
+    padding: .875rem 1.25rem;
+}
+
+
+#sidebar-container .menu{
+    width: 18rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1{
+    color: var(--primary)
+}
+
+iframe{
+    padding: 50em;
+}
