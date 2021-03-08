@@ -1,78 +1,101 @@
+<html lang="en">
 <head>
-    <title>Consultas Air Travel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registro - Air Travel </title>
     
-  
 </head>
 <body>
-
+    
     {% include 'layout.html' %}
 
-
-      <div class="d-flex">
+    
+      <div class="sidebar-container" style="float:left; width: 23%; height: 1500px;">
         <div id="sidebar-container" class="bg-primary">
             <div class="logo">
                 <h3 class="text-light" align="center">Consultas</h3>
                 </div>
                 <div class="menu">
-                    <!--normal abajo-->
-                    <div class="container">
-                    <div class="row">
-                        <div class="card col-md-12 animated fadeInLeft">
-                            <h5 class="card-header text-white bg-success">CONSULTAR INFORMACION DE UN PASAJERO</h5>
-                            <div class="card-body col-12 ">
-                            <h5 class="card-text">Consulte aquí la información relacionada a uno o más pasajeros o empleados de la empresa. 
-                                <div align="right">
-                                    <button href="#" class="btn btn-warning">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                        </svg> Buscar
-                                    </button>
-                                </div>
-                                </h5>
-                            </div>
+                    <div class="card animated fadeInLeft" style="width: 130%;">
+                        <div class="card-body bg-warning">
+                            <a href="consultapasajero.html" class="d-block text-light"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>Buscar un pasajero</a>
                         </div>
+                      </div>
+                      <div class="card animated fadeInRight" style="width: 130%;">
+                        <div class="card-body bg-white">
+                            <a href="formruta.html" class="d-block text-primary"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>Consultar una ruta</a>
                         </div>
-                    </div><br>
+                      </div>
+                     
+                      <div class="card animated fadeInLeft" style="width: 130%;">
+                        <div class="card-body bg-warning">
+                            <a href="formempleado.html" class="d-block text-light "  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>Buscar un empleado</a>
+                        </div>
+                      </div>
+                      <div class="card animated fadeInRight" style="width: 130%;">
+                        <div class="card-body bg-white">
+                            <a href="formpasajeVuelo.html" class="d-block text-primary"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>Buscar un pasaje</a>
+                        </div>
+                      </div>
+                    
+                      <div class="card animated fadeInLeft" style="width: 130%;">
+                        <div class="card-body bg-warning">
+                            <a href="consultamarca.html" class="d-block text-light"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>Buscar todas las marcas</a>
+                        </div>
+                      </div>
+                      <div class="card animated  fadeInRight" style="width: 130%;">
+                        <div class="card-body bg-white">
+                            <a href="#" class="d-block text-primary"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg> Buscar un avion </a>
+                        </div>
+                      </div>
+                      <div class="card animated fadeInLeft" style="width: 130%;">
+                        <div class="card-body bg-warning">
+                            <a href="" class="d-block text-light"  target="campo_consultas"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg> Buscar un vuelo </a>
+                        </div>
+                      </div>
+                      <div class="card animated fadeInRight" style="width: 130%;">
+                        <div class="card-body bg-white">
+                            <a href="formestadovuelo.html" class="d-block text-primary " target="campo_formularios"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg> Mostrar los estados de los vuelos</a>
+                        </div>
+                      </div>
+                      <div class="card animated fadeInLeft" style="width: 130%;">
+                        <div class="card-body bg-warning">
+                            <a href="consultacargo.html" class="d-block text-light"  target="campo_consultas"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mr-3 lead" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg> Mostrar los cargos existentes</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="card col-md-12 animated fadeInLeft">
-                                <h5 class="card-header text-white bg-warning">CONSULTAR INFORMACION DE UN PASAJERO</h5>
-                                <div class="card-body col-12 ">
-                                <h5 class="card-text">Consulte aquí la información relacionada a uno o más pasajeros o empleados de la empresa. 
-                                    <div align="right">
-                                        <button href="#" class="btn btn-warning">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                            </svg> Buscar
-                                        </button>
-                                    </div>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br>
+    </div>
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="card col-md-12 animated fadeInLeft">
-                                <h5 class="card-header text-white bg-warning">CONSULTAR INFORMACION DE UN PASAJERO</h5>
-                                <div class="card-body col-12 ">
-                                <h5 class="card-text">Consulte aquí la información relacionada a uno o más pasajeros o empleados de la empresa. 
-                                    <div align="right">
-                                        <button href="#" class="btn btn-warning">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                            </svg> Buscar
-                                        </button>
-                                    </div>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br>
-                    </div>
-                    </div>
-                    </div>
-  </body>
-                        
+    
+    <iframe frameborder="0px" padding="0px" name="campo_consultas" height="1500px" width="75%" class="m-2" style=" padding: 0%" scrolling = "no" >
+
+    </iframe>
+
+    
+   
+
+</body>
+</html>
+    
