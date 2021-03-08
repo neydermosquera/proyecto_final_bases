@@ -1,17 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios </title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/estilos.css">}
-    <script href="static/js/funciones.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">                                 
 
 </head>
 <body>
 
-  <div class="card">
+  <div class="card container m-3">
     <div class="input-field p-4 animated fadeIn">
+      <h1>Nuevo Pasajero</h1>
       <form action="/registro.html/agregar_pasajero" method="POST" id="formulariopasajero">
         <div class="row">
           <div class="col-6">
@@ -26,7 +27,7 @@
 
           <div class="row">
             <div class="col-2 p-sm-3">
-              <select name="tipodocumento" id="tipodocumento" class="form-select bg-gradient-warning text-white border-0" style="width: 130px;">
+              <select name="tipodocumento" id="tipodocumento" class="form-select btn-primary text-white" style="width: 130px;">
                 <option selected = "true" disabled = "disabled">   Tipo de documento  </option>
                 <option value="1">C.C</option>
                 <option value="2">T.I</option>
@@ -43,42 +44,61 @@
               <label for="fechanacimiento">Fecha de Nacimiento</label>
               <input type="date" class="form-control " name="fechanacimiento">
             </div>
-          </div><br>
+          </div><br>  
 
           <div class="row">
             <div class="col-2 p-sm-3">
-              <select name="sexo" id="sexo" class="form-select bg-gradient-warning text-white border-0" style="width: 130px;">
+              <select name="sexo" id="sexo" class="form-select btn-primary text-white " style="width: 130px;">
                 <option selected = "true" disabled = "disabled">   Sexo    </option>
                 <option value="1">F</option>
                 <option value="2">M</option>
                 <option value="3">Otro</option>
               </select>
             </div>
+            <div class="col-5">
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ej: Calle 52 #3-27">
+              </div>
+                <div class="col-5">
+                  <label for="email">E-mail</label>
+                  <input type="text" name="email" id="email" class="form-control " placeholder="Ejemplo: pasajero@airtravel.com">
+                </div>
+            
+            
+            
+          </div><br>
+          <div class="row">
             <div class="col-4">
-              <label for="Telefono">Télefono</label>
-              <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Ingrese el número de télefono">
-            </div>
-            <div class="col-2 p-sm-3">
-              <select name="departamento" id="departamento" onchange="cargarDepartamentos();">
-              <option value="">Seleccione Departamento</option>
+                <label for="Telefono">Télefono</label>
+                <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Ingrese el número de télefono">
+              </div>
+              <div class="p-sm-4">
+                <select name="pais" id="pais" style="width: 145px;" class="form-select btn-primary text-white">
+                <option value="">Seleccione País</option>
+                </select>
+                </div>
+                <div class="p-sm-4">
+                    <select name="departamento" id="departamento" style="width: 170px;" class="form-select btn-primary text-white">
+                        <option value="">Seleccione Departamento</option>
               </select>
-            
-            </div>
-            <div class="col-2 p-sm-3">
-              <select name="ciudad" id="ciudad">
-                <option value=""> Seleccione Ciudad</option>
-              </select>
-              
-            </div>
-            
+                </div>
+                <div class="p-sm-4">
+                <select name="ciudad" id="ciudad" style="width: 130px;" class="form-select btn-primary text-white">
+                  <option value=""> Seleccione Ciudad</option>
+                </select>
+              </div>
             
 
           </div>
+
           </div>
+          <button type="submit" class="btn btn-primary"> REGISTRAR </button><br>
           
         </form>
     </div>
-  </div> 
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
   </body>
+
+</html>
