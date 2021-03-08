@@ -12,8 +12,9 @@
 
 
 #sidebar-container .menu{
-    width: 18rem;
+    width: 70%;
 }
+
 
 a:hover {
     text-decoration: none;
@@ -24,5 +25,7 @@ h1{
 }
 
 iframe{
-    padding: 50em;
+    padding:0em;
 }
+
+
