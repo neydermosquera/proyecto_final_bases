@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">                                 
+
+</head>
+<body>
+<form action="/updatecargo/{{carg.0}}" method="POST" id="formeditcargo">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+              
+              <div class="card-body">
+                  <h4 class="card-title">Edita el CARGO seleccionado</h4><br>
+                  <input type="text" class="form-control" name="descripcion" placeholder="Ingrese el nuevo cargo" value="{{ carg.1 }}"><br>
+                 
+                  <button type="submit" class="btn btn-primary col-12"> GUARDAR </button><br>
+              </div>
+            </div>
+          
+      </div>
+      
+  </div>
+  
+  </div><br>
+  
+</form>
+</body>
+</html>
